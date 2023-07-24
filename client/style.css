@@ -1,0 +1,108 @@
+body {
+    background-image: url('assets/images/bg2-min.jpg');
+    background-size: contain;
+    font-family: Helvetica;
+}
+
+.input-container {
+    background-image: url('assets/images/paper-min.png');
+    background-size: cover;
+    background-position: top left;
+    padding: 35px 60px;
+    width: 40%;
+    margin: auto;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, textarea {
+    background-color: transparent;
+    box-sizing: border-box;
+    border: none;
+    margin-top: 5px;
+    font-size: large;
+    font-weight: bold;
+    resize: none;
+    width: 100%;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #4C4E52;
+}
+
+.task-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.task {
+    position: relative;
+    background-image: url('assets/images/note-min.png');
+    background-size: cover;
+    
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    
+    height: 327px;
+    max-height: 327px;
+    width: 249px;
+    min-width: 249px;
+    
+    margin: 10px;
+    padding: 60px 20px;
+    box-sizing: border-box;
+}
+
+.task > p, .task > h3 {
+    margin: 5px;
+}
+
+.task > p { 
+    font-weight: normal;
+}
+
+.title-container {
+    width: 30%;
+    min-width: 250px;
+    margin: auto;
+}
+
+.title-container > img {
+    width: 100%;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mt-50p {
+    margin-top: 50px;
+}
+
+.mt-20p {
+    margin-top: 20px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.btn {
+    padding: 0 15px;
+}
+
+.close-btn {
+    border-radius: 50%;
+    color: white;
+    background-color: black;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: larger;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Origami Task List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="title-container flex-center mt-50p">
+        <img src="assets/images/title-min.png" alt="My Task Board">
+    </div>
+    <form id="taskForm">
+        <div class="input-container mt-50p">
+            <label for="title">Enter a Task:</label>
+            <input type="text" name="title" id="title" placeholder="Enter title here">
+            <textarea name="description" id="description" rows="5" placeholder="Enter description here" maxlength="300"></textarea>
+        </div>
+        <div class="flex-center mt-20p">
+            <button class="btn" type="button" onclick="addTask()">Submit</button>
+        </div>
+    </form>
+    <div id="task-container" class="task-container"></div>
+    <script src="tasks.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
